@@ -118,7 +118,7 @@ database.ref().on("child_added", function(snapshot, prevChildKey) {
   var timeLeft = nextTrain(frequency, firstTime);
   var nextArrival = moment().add(timeLeft, "minutes")
 
-  // Employee Info
+  // Testing display 
   console.log(name);
   console.log(destination);
   console.log(firstTime);
