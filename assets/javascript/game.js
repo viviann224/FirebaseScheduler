@@ -115,7 +115,9 @@ database.ref().on("child_added", function(snapshot, prevChildKey) {
   var destination = snapshot.val().destination;
   var firstTime = snapshot.val().start;
   var frequency = snapshot.val().frequency;
+  //calling nextTrain function to return the time left
   var timeLeft = nextTrain(frequency, firstTime);
+  //adding the time left with the current time to get the next arrival
   var nextArrival = moment().add(timeLeft, "minutes")
 
   // Testing display 
@@ -124,25 +126,15 @@ database.ref().on("child_added", function(snapshot, prevChildKey) {
   console.log(firstTime);
   console.log(frequency);
   console.log("Time Left: "+ timeLeft);
+  //formating the next time
   console.log("Next Arrival time: "+moment(nextArrival).format("hh:mm"));
-  /*
 
-  // Prettify the employee start
-  var empStartPretty = moment.unix(empStart).format("MM/DD/YY");
-
-  // Calculate the months worked using hardcore math
-  // To calculate the months worked
-  var empMonths = moment().diff(moment.unix(empStart, "X"), "months");
-  console.log(empMonths);
-
-  // Calculate the total billed rate
-  var empBilled = empMonths * empRate;
-  console.log(empBilled);
+  
 
   // Add each train's data into the table
-  $("#employee-table > tbody").append("<tr><td>" + empName + "</td><td>" + empRole + "</td><td>" +
-  empStartPretty + "</td><td>" + empMonths + "</td><td>" + empRate + "</td><td>" + empBilled + "</td></tr>");
-*/
+  $(".table > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" +
+  frequency + "</td><td>" + moment(nextArrival).format("hh:mm") + "</td><td>" + timeLeft + "</td></tr>");
+
 
 });
   
