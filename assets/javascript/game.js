@@ -28,7 +28,7 @@ function nextTrain(myFreq, myTime)
     // myTIme, and the format. The firstTimeConverted object is then pushed back one year 
     //by calling the subtract function and passes 1 year.
     // First Time (pushed back 1 year to make sure it comes before current time)
-    var firstTimeConverted = moment(myTime, "hh:mm").subtract(1, "years");
+    var firstTimeConverted = moment(myTime, "hh:mm A").subtract(1, "years");
     //console.log(firstTimeConverted);
 
     // creating variable currentTime via call from moment function
@@ -127,13 +127,13 @@ database.ref().on("child_added", function(snapshot, prevChildKey) {
   console.log(frequency);
   console.log("Time Left: "+ timeLeft);
   //formating the next time
-  console.log("Next Arrival time: "+moment(nextArrival).format("hh:mm"));
+  console.log("Next Arrival time: "+moment(nextArrival).format("hh:mm A"));
 
   
 
   // Add each train's data into the table
   $(".table > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" +
-  frequency + "</td><td>" + moment(nextArrival).format("hh:mm") + "</td><td>" + timeLeft + "</td></tr>");
+  frequency + "</td><td>" + moment(nextArrival).format("hh:mm A") + "</td><td>" + timeLeft + "</td></tr>");
 
 
 });
