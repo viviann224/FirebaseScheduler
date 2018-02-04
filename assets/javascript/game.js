@@ -17,7 +17,7 @@
   var firstTime="00:00";
   var frequency=0;
 
-
+$("#dialog").hide();
 
 /////////////////////////////////////////////////
 //fx to test next time of arrival
@@ -102,8 +102,9 @@ function nextTrain(myFreq, myTime)
 	}
 	else
 	{
+
 		// creating a "temporary" myTrain object for storing train data
-	alert("please try again, you did not enter the field correctly!");
+		alert("Please try again, you did not enter the field correctly!");
 	}
 	
 
