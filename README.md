@@ -32,7 +32,7 @@ The program then checks the firebase database to see if there is a new entry sto
 - Chrome DevTools
 - Bootstrap
 - Adobe Photoshop CC 2015.5
--Google fonts
+- Google fonts
 
 **VERSION**:
 This is the first version of the Firebase Train Scheduler
