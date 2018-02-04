@@ -2,7 +2,7 @@ body {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
-	background: linear-gradient(-45deg, #5b4128, #5b4128, #b0a79e, #908e82);
+	background: linear-gradient(-45deg, #5b4128, #827263, #b0a79e, #908e82);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -156,11 +156,21 @@ h4
 {
 	line-height: .5;
 	text-align: center;
-	color:black;
-	text-shadow: 2px 2px 8px gray;
+	color:#434141;
+	text-shadow: 1px 1px 4px gray;
 	font-weight: bold;
 	margin:0px;
 
+}
+
+th
+{
+	line-height: .5;
+	text-align: center;
+	color:#434141;
+	text-shadow: 1px 1px 4px gray;
+	font-weight: bold;
+	margin:0px;
 }
 
 h5
