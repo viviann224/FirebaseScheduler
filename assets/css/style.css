@@ -60,6 +60,8 @@ h1
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	font-size: 3.2rem;
+	text-shadow: 2px 2px 8px gray;
+	margin-bottom: 0px;
 }
 /*
 body
@@ -129,6 +131,8 @@ form {
 	box-sizing: border-box;
 	background-color: #eeede9;
 	border: 2px solid #ddd5d2;
+
+    border-radius: 5px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 125%;
 	color: #777777;			
@@ -142,6 +146,7 @@ form {
 	box-sizing: border-box;
 	background-color: #eeede9;
 	border: 2px double #ddd5d2;
+    border-radius: 5px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 125%;
 	color: #777777;	
@@ -149,13 +154,37 @@ form {
 }
 h4
 {
-
+	line-height: .5;
 	text-align: center;
-
+	color:black;
+	text-shadow: 2px 2px 8px gray;
 	font-weight: bold;
 	margin:0px;
 
-}		
+}
+
+h5
+{
+	 text-transform: uppercase;
+	 margin:0px;
+	 margin-top:20px;
+	 margin-bottom:2px;
+	 text-shadow: 2px 2px 8px gray;
+	 word-spacing: 1px;
+	 font-size: 24px;
+}	
+
+span
+{
+	margin:0px;
+
+	padding: 5px;
+	font-size:40px;
+	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari 3-8 */
+    transform: rotate(7deg);
+	
+}	
 
 input 
 {
