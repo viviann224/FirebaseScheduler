@@ -31,6 +31,7 @@ function nextTrain(myFreq, myTime)
     var firstTimeConverted = moment(myTime, "hh:mm A").subtract(1, "years");
     //console.log(firstTimeConverted);
 
+
     // creating variable currentTime via call from moment function
     var currentTime = moment();
     //console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
@@ -73,6 +74,10 @@ function nextTrain(myFreq, myTime)
 	firstTime =$("#firstTime").val().trim();
 	frequency = parseInt($("#frequency").val().trim());
 
+	console.log(moment("24:00", "hh:mm A"));
+	if(frequency>0 && firstTime.isvalid())
+	{
+
 	// creating a "temporary" myTrain object for storing train data
 	var myTrain = 
 	{
@@ -81,8 +86,7 @@ function nextTrain(myFreq, myTime)
 	    start: firstTime,
 	    frequency: frequency
 	  };
-
-	//adds the object myTrain into the firebase database 
+	  //adds the object myTrain into the firebase database 
   	database.ref().push(myTrain);
 
   	// Logs everything to console
@@ -93,6 +97,14 @@ function nextTrain(myFreq, myTime)
 
   // Alert
   alert("myTrain successfully added");
+	}
+	else
+	{
+		// creating a "temporary" myTrain object for storing train data
+	alert("please try again, you did not enter the field correctly!");
+	}
+	
+
 
   	// Clears all of the text-boxes
   	$("#name").val("");
@@ -106,7 +118,8 @@ function nextTrain(myFreq, myTime)
 
   //Firebase event for adding myTrain to the database 
   //and autopopulates a table of html when a user adds an entry
-database.ref().on("child_added", function(snapshot, prevChildKey) {
+database.ref().on("child_added", function(snapshot, prevChildKey) 
+{
 
   //console.log(snapshot.val());
 
@@ -135,6 +148,8 @@ database.ref().on("child_added", function(snapshot, prevChildKey) {
   $(".table > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" +
   frequency + "</td><td>" + moment(nextArrival).format("hh:mm A") + "</td><td>" + timeLeft + "</td></tr>");
 
-
+ // If any errors are experienced, log them to console.
+}, function(errorObject) {
+  console.log("The read failed: " + errorObject.code);
 });
   
