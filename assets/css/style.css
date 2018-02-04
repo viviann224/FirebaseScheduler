@@ -1,4 +1,6 @@
-body {
+/*added animated bg*/
+body 
+{
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
@@ -9,50 +11,53 @@ body {
 	animation: Gradient 15s ease infinite;
 }
 
-@-webkit-keyframes Gradient {
+@-webkit-keyframes Gradient 
+{
 	0% {
 		background-position: 0% 50%
-	}
+		}
 	50% {
 		background-position: 100% 50%
-	}
+		}
 	100% {
 		background-position: 0% 50%
-	}
+		}
 }
 
-@-moz-keyframes Gradient {
+@-moz-keyframes Gradient 
+{
 	0% {
 		background-position: 0% 50%
-	}
+		}
 	50% {
 		background-position: 100% 50%
-	}
+		}
 	100% {
 		background-position: 0% 50%
-	}
+		}
 }
 
-@keyframes Gradient {
+@keyframes Gradient 
+{
 	0% {
 		background-position: 0% 50%
-	}
+		}
 	50% {
 		background-position: 100% 50%
-	}
+		}
 	100% {
 		background-position: 0% 50%
-	}
+		}
 }
 
-#mainHeader {
+#mainHeader 
+{
 	width: 100%;
 	margin: 0 0 20px 0; 
 	padding: 1px 0 2px 0;
 	background-color: ;
 	color: #ffffff;
 	text-align: center;
-
 }
 
 h1
@@ -63,45 +68,30 @@ h1
 	text-shadow: 2px 2px 8px gray;
 	margin-bottom: 0px;
 }
-/*
-body
+
+.sessionheader 
 {
-	font-family: 'Merriweather', serif;
-	font-size: 12px;
-	line-height: 1.5;
-
-	width: 100%;
-    height: 100vh;
-    background: linear-gradient(-45deg, #5b4128, #070b0c, #b0a79e, #908e82);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
-
-}
-*/
-
-.sessionheader {
 	width: 100%;
 	margin: 0 0 0 0;
     padding: 0.5px 0 0.5px 10px; 
 	background-color: ;
 	color: #ffffff;
 	text-align: left;
-
-
 }
 
-.roundedDiv{
+.roundedDiv
+{
 	border-radius: 5px;
 }
 
-button {
+button 
+{
 	background-color: gray;
 	color: #fff;
 }
 
-.trainCount {
+.trainCount 
+{
 	box-sizing: border-box;
 	background-color: #000000;
 	border: 2px solid #dddddd;	
@@ -110,12 +100,13 @@ button {
 	padding: 2px 4px 2px 2px;			
 }
 
-.byline {
-	
+.byline 
+{
 	font-size: .8em;
 }
 
-.results {
+.results 
+{
 	margin: 20, auto;
 	padding: 10px 10px 10px 10px;
 	box-sizing: border-box;
@@ -124,19 +115,20 @@ button {
 }
 
 
-form {
+form 
+{
 	width: 100%;
 	margin: 0 auto 20px auto;
 	padding: 10px 10px 10px 10px;
 	box-sizing: border-box;
 	background-color: #eeede9;
 	border: 2px solid #ddd5d2;
-
     border-radius: 5px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 125%;
 	color: #777777;			
 }
+
 .trainSchedule 
 {
 	text-align: center;
@@ -150,8 +142,8 @@ form {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 125%;
 	color: #777777;	
-
 }
+
 h4
 {
 	line-height: .5;
@@ -160,7 +152,6 @@ h4
 	text-shadow: 1px 1px 4px gray;
 	font-weight: bold;
 	margin:0px;
-
 }
 
 th
@@ -187,20 +178,16 @@ h5
 span
 {
 	margin:0px;
-
 	padding: 5px;
 	font-size:40px;
 	-ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Safari 3-8 */
     transform: rotate(7deg);
-	
 }	
 
 input 
 {
 	width: 100%;
 	border: 2px double gray;
-	    overflow: visible;
+	overflow: visible;
 }
-
-
