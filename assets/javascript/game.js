@@ -55,6 +55,8 @@ function nextTrain(myFreq, myTime)
     var nextTrain = moment().add(minNextTrain, "minutes");
     //console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
+    console.log("nextTrain returns: "+minNextTrain);
+
     return minNextTrain;
 }
 
@@ -121,8 +123,8 @@ database.ref().on("child_added", function(snapshot, prevChildKey) {
   console.log(destination);
   console.log(firstTime);
   console.log(frequency);
-  console.log(timeLeft);
-  console.log(nextArrival);
+  console.log("Time Left: "+ timeLeft);
+  console.log("Next Arrival time: "+moment(nextArrival).format("hh:mm"));
   /*
 
   // Prettify the employee start
