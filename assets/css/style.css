@@ -1,0 +1,77 @@
+#mainHeader {
+	width: 100%;
+	margin: 0 0 20px 0; 
+	padding: 1px 0 2px 0;
+	background-color: saddlebrown;
+	color: #ffffff;
+	text-align: center;
+}
+
+.sessionheader {
+	width: 100%;
+	margin: 0 0 0 0;
+    padding: 0.5px 0 0.5px 10px; 
+	background-color: steelblue;
+	color: #ffffff;
+	text-align: left;
+
+}
+
+.roundedDiv{
+	border-radius: 5px;
+}
+
+button {
+	background-color: steelblue;
+	color: #fff;
+}
+
+.trainCount {
+	box-sizing: border-box;
+	background-color: #000000;
+	border: 2px solid #dddddd;	
+	color: #ffffff;
+	margin: 0 0 0 0;
+	padding: 2px 4px 2px 2px;			
+}
+
+.byline {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: .8em;
+}
+
+.results {
+	margin: 20, auto;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border: 2px solid #dddddd;		
+}
+
+
+form {
+	width: 100%;
+	margin: 0 auto 20px auto;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border: 2px solid steelblue;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 125%;
+	color: #777777;			
+}
+.trainSchedule {
+	width: 100%;
+	margin: 0 auto 20px auto;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border: 2px solid steelblue;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 125%;
+	color: #777777;			
+}		
+
+input {
+	width: 100%;
+}
