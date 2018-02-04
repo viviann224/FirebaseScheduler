@@ -74,8 +74,10 @@ function nextTrain(myFreq, myTime)
 	firstTime =$("#firstTime").val().trim();
 	frequency = parseInt($("#frequency").val().trim());
 
-	console.log(moment("24:00", "hh:mm A"));
-	if(frequency>0 && firstTime.isvalid())
+	//user input validation
+	//there must be a valid time frequency greater than 0 mins
+	//firstTime must be a valid military time
+	if(frequency>0 && firstTime<=moment("24:00", "hh").format("HH") &&firstTime>=moment("00:00", "hh").format("HH"))
 	{
 
 	// creating a "temporary" myTrain object for storing train data
